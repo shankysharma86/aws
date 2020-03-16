@@ -1,0 +1,11 @@
+"resources": [{
+    "email_google" {
+        "type": "AWS::Lambda::Function",
+        "properties": {
+          "name": "email_google",
+	  "alias": "latestversion",
+          "currentversion": "$LATEST",
+          "targetversion": "V1.1"
+        }
+    }
+}]

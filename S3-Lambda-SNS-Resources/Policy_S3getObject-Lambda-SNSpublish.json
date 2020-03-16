@@ -1,0 +1,34 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "logs:DisassociateKmsKey",
+                "logs:DeleteSubscriptionFilter",
+                "logs:UntagLogGroup",
+                "logs:DeleteLogGroup",
+                "logs:DeleteLogStream",
+                "logs:PutLogEvents",
+                "logs:CreateExportTask",
+                "logs:PutMetricFilter",
+                "s3:GetObject",
+                "logs:CreateLogStream",
+                "logs:DeleteMetricFilter",
+                "logs:TagLogGroup",
+                "sns:Publish",
+                "logs:DeleteRetentionPolicy",
+                "logs:AssociateKmsKey",
+                "logs:PutSubscriptionFilter",
+                "logs:PutRetentionPolicy"
+            ],
+            "Resource": [
+                "arn:aws:logs:*:<123456123456>:log-group:*:log-stream:*",
+                "arn:aws:logs:*:<123456123456>:log-group:*",
+                "arn:aws:s3:::<your-s3-bucket-name>/*",
+                "arn:aws:sns:*:<123456123456>:<your-sns-topic-name>"
+            ]
+        }
+    ]
+}
