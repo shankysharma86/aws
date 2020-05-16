@@ -161,5 +161,3 @@ Parameters:
   EnvironmentName:
     Type: String
     Default: Prod
-  VPC:
-    Type: 'List<AWS::EC2::VPC::Id>'
